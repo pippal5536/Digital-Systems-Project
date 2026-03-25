@@ -11,7 +11,7 @@ The workflow is organised around a shared preprocessing foundation and a shared 
 - apply a shared per-user chronological split policy to reduce temporal leakage
 - train and evaluate several recommender-system baselines and stronger ranking models
 - compare relevance, novelty, and catalogue coverage in a single reporting workflow
-- present the results through   Streamlit dashboard
+- present the results through an academic-style Streamlit dashboard
 
 ## Implemented recommenders
 
@@ -105,13 +105,36 @@ project/
 
 ## Input data
 
-Place the raw source files in `data/raw/`:
+Download the **Food.com Recipes and Interactions** dataset from the Kaggle webpage as a ZIP file:
+
+`https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions`
+
+After downloading the ZIP file from the web, extract the materials into:
+
+```text
+project/
+├─ data/
+│  └─ raw/
+```
+
+The project expects the following three raw source files inside `data/raw/`:
 
 - `RAW_interactions.csv`
 - `RAW_recipes.csv`
 - `PP_recipes.csv`
 
-The pipeline expects these filenames.
+A correct input-data layout should look like this:
+
+```text
+project/
+├─ data/
+│  ├─ raw/
+│  │  ├─ RAW_interactions.csv
+│  │  ├─ RAW_recipes.csv
+│  │  └─ PP_recipes.csv
+```
+
+These filenames should remain unchanged, as the pipeline expects them exactly as shown above.
 
 ## Environment setup
 
@@ -204,6 +227,5 @@ Core packages used in this repository include:
 - `joblib`
 - `streamlit`
 - `pyarrow`
-
 
 
