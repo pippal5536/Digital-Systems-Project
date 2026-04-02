@@ -1,8 +1,10 @@
 __pycache__/
 *.py[cod]
+data/mappings/
 data/raw/
 data/interim/
 data/processed/
+data/splits/
 outputs/
 *.parquet
 *.pkl
