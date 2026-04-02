@@ -175,13 +175,13 @@ Run the dashboard entry script with Streamlit.
 If the home page file lives at the repository root of the dashboard folder, use a command such as:
 
 ```bash
-streamlit run dashboard/1_Home.py
+streamlit run dashboard/app.py
 ```
 
 If the current working layout is still flat while developing, adjust the path accordingly, for example:
 
 ```bash
-streamlit run 1_Home.py
+streamlit run app.py
 ```
 
 ## Dashboard pages
